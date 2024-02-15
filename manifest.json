@@ -1,0 +1,23 @@
+{
+  "start_url": "index.html",
+  "short_name": "Demo Ticket",
+  "name": "Demo Ticket Web App",
+  "description": "A demo Ticket using HubSpot",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "public/hubspot_logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "splash_pages": [
+    {
+      "src": "public/hubspot_logo.png",
+      "sizes": "512x512"
+    }
+  ]
+}
