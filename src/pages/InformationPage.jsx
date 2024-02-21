@@ -55,6 +55,8 @@ const InformationPage = () => {
     }
   }, [detail?.properties?.va_numbers]);
 
+  console.log("va : ", detail?.properties);
+
   return (
     <Layout>
       {loading === false ? (
