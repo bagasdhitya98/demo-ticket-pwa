@@ -12,6 +12,7 @@ const InformationPage = () => {
   const [loading, setLoading] = useState(true);
 
   const order_detail = localStorage.getItem("orderDetail");
+  const order_items = JSON.parse(localStorage.getItem("orderItems") || "[]");
   const order_id = JSON.parse(order_detail);
 
   const getDetailPayment = async () => {
@@ -55,8 +56,6 @@ const InformationPage = () => {
     }
   }, [detail?.properties?.va_numbers]);
 
-  console.log("va : ", detail?.properties);
-
   return (
     <Layout>
       {loading === false ? (
@@ -64,8 +63,23 @@ const InformationPage = () => {
       ) : (
         <div className="w-96 h-full border rounded-md shadow-sm p-5">
           <h1 className="text-2xl">Payment Information</h1>
-          <p className="my-3">Virtual Account Number</p>
-          <div className="flex items-center">
+          <p className="my-3 font-semibold">Summary Orders</p>
+          <div className="gap-5">
+            {order_items?.inputs &&
+              order_items?.inputs?.map((item) => (
+                <div className="flex justify-between">
+                  <p>{item?.properties?.name}</p>
+                  <p>${item?.properties?.price}</p>
+                </div>
+              ))}
+          </div>
+          <hr className="my-5" />
+          <p className="my-3 font-semibold">Virtual Account Number</p>
+          <p className="text-sm text-gray-500">
+            Please copy the Virtual Account Number below to proceed with your
+            payment at your selected bank:
+          </p>
+          <div className="flex items-center mt-2">
             <p className="text-red-500 text-xl font-semibold mr-3">
               {detail?.properties?.va_numbers}
             </p>
