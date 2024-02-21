@@ -56,6 +56,8 @@ const InformationPage = () => {
     }
   }, [detail?.properties?.va_numbers]);
 
+  console.log(order_items);
+
   return (
     <Layout>
       {loading === false ? (
@@ -68,7 +70,8 @@ const InformationPage = () => {
             {order_items?.inputs &&
               order_items?.inputs?.map((item) => (
                 <div className="flex justify-between">
-                  <p>{item?.properties?.name}</p>
+                  <p>{item?.properties?.quantity}</p>
+                  <p className="absolute ml-10">{item?.properties?.name}</p>
                   <p>${item?.properties?.price}</p>
                 </div>
               ))}
