@@ -56,7 +56,7 @@ const InformationPage = () => {
     }
   }, [detail?.properties?.va_numbers]);
 
-  console.log(order_items);
+  console.log(detail?.properties);
 
   return (
     <Layout>
