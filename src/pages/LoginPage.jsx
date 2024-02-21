@@ -42,7 +42,7 @@ const LoginPage = () => {
     <Layout>
       <div className="flex flex-col justify-center items-center my-20">
         <h1 className="text-4xl font-bold mb-4 text-orange-500 text-center">
-          Welcome to Our Demo Site
+          Welcome to Sales Order App
         </h1>
         <p className="text-blue-900 text-center">
           This site is provided for demonstration purposes, showcasing order

@@ -245,44 +245,6 @@ const ListProducts = () => {
             </button>
           </div>
         </div>
-        {/* <div className="flex">
-          <div className="hidden md:block border-l border-gray-300 mx-4"></div>
-          <div className="col-span-1 md:col-span-1">
-            <div className="mt-6 fixed">
-              <h2 className="text-2xl font-semibold my-6">Order Cart</h2>
-              {cartIsEmpty ? (
-                <p>Your order cart is empty.</p>
-              ) : (
-                <ul className="divide-y divide-gray-200">
-                  {Object.entries(cart).map(([productId, quantity]) => {
-                    const product = products.find((p) => p.id === productId);
-                    return (
-                      <li key={productId} className="flex items-center py-2">
-                        <div className="ml-3">
-                          <p className="text-gray-800">
-                            {product?.properties.name} - $
-                            {product?.properties.price}
-                          </p>
-                          <p className="text-gray-500">Quantity: {quantity}</p>
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-              {Object.keys(cart).length > 0 && (
-                <div className="mt-6">
-                  <button
-                    onClick={() => proceedOrder()}
-                    className="bg-green-500 font-semibold text-white px-4 py-2 rounded-md"
-                  >
-                    Proceed Order
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
-        </div> */}
       </Modal>
       {listCart.length !== 0 ? (
         <div className="relative sticky bottom-0 w-screen h-20 bg-white p-5 flex justify-end">
