@@ -38,7 +38,7 @@ const PaymentPage = () => {
       }`}
       onClick={() => handleBankSelection(bank)}
     >
-      <img width={60} height={60} src={getBankLogoSrc(bank)} />
+      <img width={60} height={60} src={getBankLogoSrc(bank)} alt={bank} />
       <h2 className="text-xl font-semibold">{label}</h2>
     </div>
   );
@@ -58,7 +58,7 @@ const PaymentPage = () => {
 
   return (
     <Layout>
-      <div className="mt-10 w-1/3">
+      <div className="mt-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
         <h2 className="text-xl font-bold mb-4">Purchase Summary:</h2>
         <div className="w-full border rounded-md p-5 bg-white">
           {listItems &&
@@ -82,7 +82,7 @@ const PaymentPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/3 my-20">
+      <div className="w-full md:w-2/3 lg:w-1/2 mx-auto my-20">
         <h1 className="text-xl font-bold mb-4">Select Payment Method : </h1>
         <div className="grid grid-cols-1 gap-4">
           {renderBankSelection("bca", "BCA Virtual Account")}

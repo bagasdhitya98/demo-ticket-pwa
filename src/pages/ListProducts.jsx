@@ -184,9 +184,13 @@ const ListProducts = () => {
 
   return (
     <Layout>
-      <Navbar item={listCart.length} />
+      {loading ? <></> : <Navbar item={listCart.length} />}
       <div className="my-10 shadow-md p-10 mx-auto w-max">
-        <label className="font-bold text-2xl">List Products</label>
+        {loading ? (
+          <></>
+        ) : (
+          <label className="font-bold text-2xl">List Products</label>
+        )}
         {loading ? (
           <Loading text="Fetching products..." />
         ) : (

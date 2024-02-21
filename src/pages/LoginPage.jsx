@@ -40,20 +40,23 @@ const LoginPage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col text-center justify-center my-20">
-        <h1 className="text-4xl font-bold mb-4 text-orange-500">
+      <div className="flex flex-col justify-center items-center my-20">
+        <h1 className="text-4xl font-bold mb-4 text-orange-500 text-center">
           Welcome to Our Demo Site
         </h1>
-        <p className="text-blue-900">
+        <p className="text-blue-900 text-center">
           This site is provided for demonstration purposes, showcasing order
           creation, checking order lists, and payment via a payment gateway.
         </p>
-        <p className="text-blue-900">
+        <p className="text-blue-900 text-center">
           Explore the convenience and functionality we offer in the online
           ordering and payment process.
         </p>
       </div>
-      <form onSubmit={handleSubmit} className="w-80 grid gap-y-3">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full md:w-80 grid gap-y-3 px-4 md:px-0"
+      >
         <Input onChange={handleChange} label={"Username"} name={"username"} />
         <Input
           onChange={handleChange}
