@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
+import LoginPage from "../pages/LoginPage";
 import LandingPage from "../pages/LandingPage";
 import ListProducts from "../pages/ListProducts";
 import ListDeals from "../pages/ListDeals";
@@ -19,10 +20,22 @@ const AppRoutes = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <LandingPage />
+              <LoginPage />
             </motion.div>
           }
           path="/"
+        />
+        <Route
+          element={
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <LandingPage />
+            </motion.div>
+          }
+          path="/main"
         />
         <Route
           element={
@@ -46,7 +59,7 @@ const AppRoutes = () => {
               <ListProducts />
             </motion.div>
           }
-          path="products/list_products"
+          path="/products/list_products"
         />
         <Route
           element={
