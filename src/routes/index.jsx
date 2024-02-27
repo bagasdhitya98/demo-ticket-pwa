@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import "chart.js/auto";
 
 import LoginPage from "../pages/LoginPage";
 import LandingPage from "../pages/LandingPage";
