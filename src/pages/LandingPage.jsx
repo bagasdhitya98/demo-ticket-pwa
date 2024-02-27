@@ -23,7 +23,7 @@ const options = {
 
 const DonutChart = () => {
   return (
-    <div style={{ width: "200px", height: "200px" }}>
+    <div style={{ width: "50vw", height: "50vw" }}>
       <Doughnut data={data} options={options} />
     </div>
   );
@@ -78,21 +78,20 @@ const LandingPage = () => {
             ></div>
           </div>
         </div>
-        <div className="mx-5 flex justify-center space-x-5">
-          <button className="border shadow-md bg-blue-900 w-44 h-60 flex flex-col items-center justify-center gap gap-y-5">
+        <div className="mx-5 my-5 flex justify-center space-x-5">
+          <button className="border shadow-md bg-blue-900 w-44 h-40 flex flex-col items-center justify-center gap gap-y-5">
             <img src={HistoryWhite} width={60} height={60} />
             <p className="text-white font-bold">History Order</p>
           </button>
           <button
             onClick={() => navigate("/products/list_products")}
-            className="border shadow-md bg-white w-44 h-60 flex flex-col items-center justify-center gap gap-y-5"
+            className="border shadow-md bg-white w-44 h-40 flex flex-col items-center justify-center gap gap-y-5"
           >
             <img src={CheckoutBlue} width={60} height={60} />
             <p className="text-blue-900 font-bold">Create Order</p>
           </button>
         </div>
       </div>
-      <div className="h-1/2 w-screen"></div>
     </section>
   );
 };
