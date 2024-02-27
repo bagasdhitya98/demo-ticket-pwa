@@ -64,7 +64,7 @@ const LandingPage = () => {
           <div
             className="w-full h-40 bg-blue-800 rounded-lg flex justify-start relative"
             style={{
-              backgroundImage: `url('src/assets/illustrations/sales_illustration.jpeg')`,
+              backgroundImage: `url('/sales_illustration.jpeg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
