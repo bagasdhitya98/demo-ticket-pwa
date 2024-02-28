@@ -58,7 +58,7 @@ const PaymentPage = () => {
 
   return (
     <Layout>
-      <div className="mt-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
+      <div className="mt-10 w-80 md:w-2/3 lg:w-1/2 ml-8">
         <h2 className="text-xl font-bold mb-4">Purchase Summary:</h2>
         <div className="w-full border rounded-md p-5 bg-white">
           {listItems &&
@@ -82,7 +82,7 @@ const PaymentPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-2/3 lg:w-1/2 mx-auto my-20">
+      <div className="w-full md:w-2/3 lg:w-1/2 ml-10 w-80 my-20">
         <h1 className="text-xl font-bold mb-4">Select Payment Method : </h1>
         <div className="grid grid-cols-1 gap-4">
           {renderBankSelection("bca", "BCA Virtual Account")}

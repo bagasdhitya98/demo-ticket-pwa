@@ -198,7 +198,7 @@ const ListProducts = () => {
             {products.map((product, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-md shadow-md w-96"
+                className="bg-white p-4 rounded-md shadow-md w-80"
               >
                 <h3 className="text-xl font-semibold">
                   {product.properties.name}
@@ -249,7 +249,7 @@ const ListProducts = () => {
       {listCart.length !== 0 ? (
         <div className="relative sticky bottom-0 w-screen h-20 bg-white p-5 flex justify-end">
           <button
-            className="bg-orange-400 font-semibold text-white border-none focus:outline-none"
+            className="my-auto bg-orange-400 font-semibold text-white border-none focus:outline-none"
             onClick={() => proceedItems()}
           >
             Checkout Items

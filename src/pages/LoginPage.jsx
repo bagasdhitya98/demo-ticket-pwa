@@ -43,17 +43,17 @@ const LoginPage = () => {
   return (
     <Layout>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex flex-col justify-center items-center my-20 mx-20">
-          <img src={Seambiosys} className="my-10 w-40 md:w-60" alt="logo" />
+        <div className="flex flex-col items-center my-20">
+          <img src={Seambiosys} className="my-10 w-60 md:w-60" alt="logo" />
           <h1 className="text-4xl font-bold mb-4 text-orange-500 text-center">
             Welcome to Sales Order App
           </h1>
         </div>
-        <div className="mx-20 my-auto">
+        <div className="my-auto mx-auto">
           <form
             autoComplete="off"
             onSubmit={handleSubmit}
-            className="w-full md:w-80 grid gap-y-3 px-4 md:px-0"
+            className="w-80 md:w-80 grid gap-y-3 px-4 md:px-0"
           >
             <Input
               onChange={handleChange}

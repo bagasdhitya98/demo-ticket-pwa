@@ -22,7 +22,7 @@ const Navbar = ({ item }) => {
 
   return (
     <nav
-      className={`bg-white w-screen h-16 flex justify-center shadow-md top-0 ${
+      className={`bg-white w-full h-16 flex justify-center shadow-md top-0 ${
         isSticky ? "sticky top-0" : ""
       }`}
     >
