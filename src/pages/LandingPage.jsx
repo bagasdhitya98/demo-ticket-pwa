@@ -33,8 +33,8 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="w-screen h-screen bg-blue-100 flex flex-col items-center relative">
-      <div className="h-1/3 w-screen bg-blue-900 rounded-b-lg">
+    <section className="w-screen h-full bg-blue-100 flex flex-col items-center relative">
+      <div className="h-full w-screen bg-blue-100 rounded-b-lg">
         <div className="mx-5 bg-slate-100 rounded-2xl h-max flex p-5 space-x-2 my-5">
           <div className="grid gap-y-5">
             <h2 className="font-semibold">Total Sales Today</h2>
@@ -51,6 +51,7 @@ const LandingPage = () => {
             <p>$500</p>
           </div>
         </div>
+
         <div className="mx-5 bg-slate-100 rounded-lg h-max flex p-5 space-y-2 my-26">
           <div className="flex flex-col space-y-20">
             <h2 className="font-semibold">

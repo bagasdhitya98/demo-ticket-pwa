@@ -3,7 +3,6 @@ import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
 import axios from "axios";
 
-import Layout from "../components/Layout";
 import Loading from "../components/Loading";
 import Navbar from "../components/Navbar";
 import Modal from "../components/Modal";
@@ -183,9 +182,9 @@ const ListProducts = () => {
   };
 
   return (
-    <Layout>
+    <section className="flex flex-col justify-center items-center bg-blue-100">
       {loading ? <></> : <Navbar item={listCart.length} />}
-      <div className="my-10 shadow-md p-10 mx-auto w-max">
+      <div className="my-10 p-10 mx-auto w-max">
         {loading ? (
           <></>
         ) : (
@@ -258,7 +257,7 @@ const ListProducts = () => {
       ) : (
         <></>
       )}
-    </Layout>
+    </section>
   );
 };
 
