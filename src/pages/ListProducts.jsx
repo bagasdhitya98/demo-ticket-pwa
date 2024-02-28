@@ -246,7 +246,7 @@ const ListProducts = () => {
         </div>
       </Modal>
       {listCart.length !== 0 ? (
-        <div className="relative sticky bottom-0 w-screen h-20 bg-white p-5 flex justify-end">
+        <div className="relative sticky bottom-0 w-full h-20 bg-white p-5 flex justify-end">
           <button
             className="my-auto bg-orange-400 font-semibold text-white border-none focus:outline-none"
             onClick={() => proceedItems()}

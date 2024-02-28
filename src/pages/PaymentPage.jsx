@@ -57,7 +57,7 @@ const PaymentPage = () => {
   };
 
   return (
-    <section className="w-full h-full flex flex-col mx-5 justify-center items-center">
+    <section className="w-full bg-blue-100 h-full flex flex-col mx-5 justify-center items-center">
       <div className="mt-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
         <h2 className="text-xl font-bold mb-4">Purchase Summary:</h2>
         <div className="w-full border rounded-md p-5 bg-white">
