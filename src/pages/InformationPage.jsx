@@ -59,11 +59,11 @@ const InformationPage = () => {
   console.log(detail?.properties);
 
   return (
-    <Layout>
+    <section>
       {loading === false ? (
         <Loading text="Fetching virtual account number..." />
       ) : (
-        <div className="w-96 h-full border rounded-md shadow-sm p-5">
+        <div className="w-full h-full border bg-white rounded-md shadow-sm p-5">
           <h1 className="text-2xl">Payment Information</h1>
           <p className="my-3 font-semibold">Summary Orders</p>
           <div className="gap-5">
@@ -103,7 +103,7 @@ const InformationPage = () => {
           </div>
         </div>
       )}
-    </Layout>
+    </section>
   );
 };
 

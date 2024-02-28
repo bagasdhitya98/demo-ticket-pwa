@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Loading = ({ text = "Loading..." }) => {
   return (
-    <div className="flex items-center justify-center h-full">
+    <div className="flex items-center justify-center h-20 w-60 rounded-md bg-white">
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
